@@ -1,0 +1,1 @@
+hello there, put your english sample texts here, the more the better. then run the training script to generate the profiles

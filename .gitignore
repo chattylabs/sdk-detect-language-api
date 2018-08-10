@@ -59,3 +59,22 @@ typings/
 
 # next.js build output
 .next
+
+# temp/os files
+.DS_Store
+.AppleDouble
+.AppleDB
+.AppleDesktop
+.LSOverride
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN
+Desktop.ini
+._*
+*~
+*.lock
+*.swp
+*.out
+
