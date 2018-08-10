@@ -20,7 +20,8 @@
   "scripts": {
     "test": "jest --env=node --colors",
     "start": "node index.js",
-    "prettier": "prettier --write *.js **/*.js **/**/*.js"
+    "prettier": "prettier --write *.js **/*.js **/**/*.js",
+    "train": "node bin/train.js"
   },
   "husky": {
     "hooks": {
