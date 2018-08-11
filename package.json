@@ -1,0 +1,37 @@
+{
+  "name": "sdk-detect-language-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/chattylabs/sdk-detect-language-api#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chattylabs/sdk-detect-language-api.git"
+  },
+  "dependencies": {
+    "l10n-language-detector": "^0.1.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "husky": "^0.14.3",
+    "jest": "^23.4.2",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
+  },
+  "scripts": {
+    "test": "jest --env=node --colors",
+    "start": "node index.js",
+    "prettier": "prettier --write *.js **/*.js **/**/*.js",
+    "train": "node bin/train.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run test"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false
+  }
+}
