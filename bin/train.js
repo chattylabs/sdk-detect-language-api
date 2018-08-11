@@ -1,7 +1,7 @@
 const glob = require('glob')
 const path = require('path')
 const fs = require('fs')
-const profile = require('l10n-language-detection/src/utils/profiler')
+const profile = require('customisable-language-detection/src/utils/profiler')
 
 const profiles = {}
 glob('./data/resources/*.txt', (er, files) => {

@@ -1,4 +1,4 @@
-const detect = require('l10n-language-detection')
+const detect = require('customisable-language-detection')
 const customLanguageProfiles = require('../data/languageProfiles.json')
 const customReducers = require('../utils/reducers')
 
