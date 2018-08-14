@@ -1,4 +1,3 @@
-const detect = require('customisable-language-detection')
 const pjson = require('../package.json')
 
 module.exports = app => {

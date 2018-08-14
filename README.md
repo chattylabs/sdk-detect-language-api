@@ -1,6 +1,6 @@
 # sdk-detect-language-api
 
-Chatty API to detect the language of our users.
+Open source API that detects the language of a given text.
 
 ## Training
 

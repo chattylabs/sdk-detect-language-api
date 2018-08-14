@@ -1,14 +1,9 @@
-const detect = require('customisable-language-detection')
-const customLanguageProfiles = require('../data/languageProfiles.json')
-const customReducers = require('../utils/reducers')
+const detect = require('@chattylabs/language-detection')
 
 module.exports = app => {
   app.get('/detect/:text', (req, res) => {
     const text = req.params.text
-    const results = detect(text, {
-      languageProfiles: customLanguageProfiles,
-      reducers: customReducers
-    })
+    const results = detect(text)
     if (results) {
       res.setHeader('Content-Type', 'application/json')
       res.status(200).send(JSON.stringify(results))
