@@ -2,7 +2,7 @@ const detect = require('@chattylabs/language-detection')
 
 module.exports = app => {
   app.get('/detect', (req, res) => {
-    const text = req.params.text
+    const text = req.query.text
     const results = detect(text)
     if (results) {
       res.setHeader('Content-Type', 'application/json')
