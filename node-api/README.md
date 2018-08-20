@@ -10,7 +10,7 @@ Open source API that detects the language of a given text.
 
 ### Detect
 
-Once the server is up and running you can use a GET on `/detect` route with the parameter `text` set to the text you want to detect the language of.
+Once the server is up and running you can use a GET on `/detect` route with the query parameter `text` set to the text you want to detect the language of.
 
 Node example:
 
