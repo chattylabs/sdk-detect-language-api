@@ -5,12 +5,11 @@ const bodyParser = require('body-parser')
 const detect = require('@chattylabs/language-detection')
 
 const app = express();
-
 app.use(cors({ origin: true }));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.get('/detect', (req, res) => {
+app.get('/', (req, res) => {
   const text = req.query.text
   const results = detect(text)
   if (results) {
@@ -21,4 +20,4 @@ app.get('/detect', (req, res) => {
   }
 })
 
-exports.myAwesomeFunction = functions.https.onRequest(app);
+exports.detect = functions.https.onRequest(app);

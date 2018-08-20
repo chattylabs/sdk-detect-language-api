@@ -12,13 +12,13 @@ firebase deploy
 
 ### Detect
 
-Once the server is up and running you can use a GET on `/detect` route with the parameter `text` set to the text you want to detect the language of.
+Once the server is up and running you can use a GET on `/detect` route with the query parameter `text` set to the text you want to detect the language of.
 
 Node example:
 
 ```
 const request = require("request")
-const endpoint = "https://api.example.com/detect"
+const endpoint = "https://us-central1-language-detection-api.cloudfunctions.net/detect"
 const params = {
   text: 'hello world'
 }
